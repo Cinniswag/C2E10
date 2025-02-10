@@ -6,7 +6,14 @@ using namespace std;
 
 int main()
 {
-    double gallons = 15, miles = 375, mpg;
+    //UI
+    double gallons, miles, mpg;
+    cout << "Please provide the maximum fuel capacity of the car in gallons"<< endl;
+    cin >> gallons;
+    cout << "Please provide the number of miles the car can travel before needing to refuel" << endl;
+    cin >> miles;
+
+    //Calculation
     mpg = miles / gallons;
     cout << "The number of miles per gallon is " << mpg << "MPG." << endl;
 }
